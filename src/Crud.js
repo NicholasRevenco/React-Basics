@@ -11,13 +11,15 @@ export const Crud = () => {
     };
 
     const addTask = () => {
-        const newToDoList = [...toDoList, newTask];
-        setToDoList(newToDoList);
-        console.log(newToDoList);
+        const task = {
+            id: toDoList.length === 0 ? 1 : toDoList[toDoList.length-1].id + 1,
+            taskName: newTask
+        }
+        setToDoList([...toDoList, task]);
     };
 
-    const deleteTask = (taskName) => {
-        setToDoList(toDoList.filter((task) => task !== taskName ))
+    const deleteTask = (id) => {
+        setToDoList(toDoList.filter((task) => task.id !== id ))
     };
     
     return (
@@ -32,8 +34,8 @@ export const Crud = () => {
                 {toDoList.map((task, key) => {
                     return (
                         <div>
-                            <h1 key={key}>{task}</h1>
-                            <button onClick={() => {deleteTask(task)}}>X</button>
+                            <h1 key={key}>{task.taskName}</h1>
+                            <button onClick={() => {deleteTask(task.id)}}>X</button>
                         </div>)
                 })}
             </div>
