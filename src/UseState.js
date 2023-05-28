@@ -1,10 +1,11 @@
 import './App.css';
 import { User } from "./User";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const UseState = () => {
 
-  const users = [
+
+const users = [
     //{name: "Pedro", age: 21}, 
     //{ name: "Nicholas", age: 55 }, 
     //{name: "Adrian", age: 23 }
@@ -13,6 +14,13 @@ export const UseState = () => {
   const [age, setAge] = useState(0);
   const [inputValue, setInputValue] = useState("");
   const [showText, setShowText] = useState(true);
+
+  useEffect(() => {
+    console.log("component mounted");
+    return () => {
+        console.log("component unmounted");
+    }
+  }, [showText]);
 
   const increaseAge = () => {
     setAge(age + 1 );
