@@ -12,19 +12,8 @@ function App() {
     <div className="App">
 
         {users.map((user, key) => {
-          return <div> {user.name} {user.age} </div>
+          return <div> <User name={user.name} age={user.age} /> </div>
         })}
-
-        <User 
-          name="Nicholas"
-          age={21}
-          email="nicholas.revenco@gmail.com"
-        />
-        <User 
-          name="Adrian"
-          age={13}
-          email="adrian.revenco@gmail.com"
-        />
 
     </div>
   );
