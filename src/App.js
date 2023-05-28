@@ -8,6 +8,11 @@ function App() {
           age={21}
           email="nicholas.revenco@gmail.com"
         />
+        <User 
+          name="Adrian"
+          age={13}
+          email="adrian.revenco@gmail.com"
+        />
     </div>
   );
 }
