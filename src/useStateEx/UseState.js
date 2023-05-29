@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 import { User } from "./User";
 import { useState, useEffect } from "react";
 

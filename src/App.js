@@ -1,6 +1,5 @@
 import './App.css';
-import { User } from "./User";
-import { UseState } from "./UseState";
+import { UseState } from "./useStateEx/UseState";
 import { Crud } from "./Crud";
 import { ExcuseApi, NameAgeApi } from "./Api";
 import { ReactRouterDom } from "./ReactRouterDom";
