@@ -12,7 +12,11 @@ export const ReactRouterDom = () => {
     
     const [username, setUsername] = useState("Nicholas");
 
-    const client = new QueryClient();
+    const client = new QueryClient({defaultOptions: {
+        queries: {
+            refetchOnWindowFocus: false,
+        }
+    }});
 
     return (
         <div className="App">
