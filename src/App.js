@@ -14,9 +14,13 @@ function App() {
   return (
     <div className="App">
         <UseState />
+        <hr />
         <Crud />
+        <hr />
         <ExcuseApi />
+        <hr />
         <NameAgeApi />
+        <hr />
         <ReactRouterDom />
     </div>
   );
