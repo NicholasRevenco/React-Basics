@@ -4,6 +4,8 @@ import { Crud } from "./crudEx/Crud";
 import { ExcuseApi } from "./apiEx/ExcuseApi";
 import { NameAgeApi } from "./apiEx/NameAgeApi";
 import { ReactRouterDom } from "./reactRouterDomEx/ReactRouterDom";
+import { Form } from "./formsExample/Form";
+
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <NameAgeApi />
         <hr />
         <ReactRouterDom />
+        <hr />
+        <Form />
     </div>
   );
 }
