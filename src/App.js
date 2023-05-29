@@ -5,6 +5,8 @@ import { ExcuseApi } from "./apiEx/ExcuseApi";
 import { NameAgeApi } from "./apiEx/NameAgeApi";
 import { ReactRouterDom } from "./reactRouterDomEx/ReactRouterDom";
 import { Form } from "./formsEx/Form";
+import { HookApp } from "./hooksEx/HookApp";
+
 
 
 
@@ -26,6 +28,8 @@ function App() {
         <ReactRouterDom />
         <hr />
         <Form />
+        <hr />
+        <HookApp />
     </div>
   );
 }
